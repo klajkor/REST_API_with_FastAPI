@@ -138,3 +138,6 @@ nbproject/
 
 # Configuration and secrets
 /.env
+
+# Project specific settings
+app/input/router_IP.log

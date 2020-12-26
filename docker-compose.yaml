@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+
+  fastapi:
+    build: .
+    container_name: fastapi
+    restart: always
+    volumes:
+    - /var/log:/app/input:ro
+    ports:
+      - "80:80"
