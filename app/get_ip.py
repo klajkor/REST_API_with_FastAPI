@@ -22,6 +22,7 @@ def get_ip_from_log(log_file: str):
     log_item.time = "01:02:03"
     log_item.ip_address = "12.34.56.78/32"
     last_line = get_last_line_of_log(log_file)
+    last_line = last_line.replace("  ", " ")
     fields = last_line.split(" ")
     log_item.date = fields[0] + " " + fields[1]
     log_item.time = fields[2]
